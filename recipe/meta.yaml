@@ -1,5 +1,5 @@
 {% set name = "aiormq" %}
-{% set version = "2.9.1" %}
+{% set version = "3.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: dc0fbbc7f8ad5af6a2cc18e00ccc5f925984cde3db6e8fe952c07b7ef157b5f2
+  sha256: 8b795bc9ea4ee746141bb5f1cdce03d6355e6abfe1ec9876e7f44c82ca82ecf6
 
 build:
   number: 0
