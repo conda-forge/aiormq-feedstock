@@ -5,9 +5,13 @@ Home: https://github.com/mosquito/aiormq
 
 Package license: Apache-2.0
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/aiormq-feedstock/blob/master/LICENSE.txt)
 
 Summary: aiormq is a pure python AMQP client library
+
+Development: https://github.com/mosquito/aiormq
+
+Documentation: https://github.com/mosquito/aiormq
 
 aiormq is a pure python AMQP client library
 
