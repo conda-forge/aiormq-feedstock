@@ -20,7 +20,7 @@ requirements:
     - pip
   run:
     - python >=3.6
-    - pamqp ==2.3.0
+    - pamqp ==3.0.1
     - yarl
 
 test:
