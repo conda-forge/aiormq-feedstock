@@ -10,7 +10,7 @@ source:
   sha256: fd815d2bb9d8c950361697a74c1b067bc078726c3ef3b837e979a68a4986b148
 
 build:
-  number: 2
+  number: 3
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -20,7 +20,7 @@ requirements:
     - pip
   run:
     - python >=3.7
-    - pamqp ==3.0.1
+    - pamqp ==3.2.1
     - yarl
 
 test:
