@@ -1,5 +1,5 @@
 {% set name = "aiormq" %}
-{% set version = "6.7.7" %}
+{% set version = "6.8.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 3b93f612f56989b2757a9a7b299dd94dd3227ce28ba43e81d5fbcded6341dfab
+  sha256: 198f9c7430feb7bc491016099a06266dc45880b6b1de3925d410fde6541a66fb
 
 build:
   number: 0
@@ -16,11 +16,11 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.8
     - pip
     - poetry
   run:
-    - python >=3.7
+    - python >=3.8
     - pamqp ==3.2.1
     - yarl
     - setuptools
