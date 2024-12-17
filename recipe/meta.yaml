@@ -6,26 +6,28 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: a964ab09634be1da1f9298ce225b310859763d5cf83ef3a7eae1a6dc6bd1da1a
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
     - poetry
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - pamqp ==3.2.1
     - yarl
     - setuptools
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - aiormq
 
