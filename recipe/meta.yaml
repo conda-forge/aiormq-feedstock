@@ -38,7 +38,7 @@ about:
   home: https://github.com/mosquito/aiormq
   license: Apache-2.0
   license_family: Apache
-  license_file: LICENSE.md
+  license_file: COPYING
   summary: aiormq is a pure python AMQP client library
 
   description: |
