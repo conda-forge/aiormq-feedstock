@@ -21,7 +21,7 @@ requirements:
     - poetry
   run:
     - python >={{ python_min }}
-    - pamqp ==3.2.1
+    - pamqp ==3.3.0
     - yarl
     - setuptools
 
