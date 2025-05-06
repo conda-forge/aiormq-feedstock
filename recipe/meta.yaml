@@ -26,8 +26,12 @@ requirements:
     - setuptools
 
 test:
+  requires:
+    - pip
   imports:
     - aiormq
+  commands:
+    - pip check
 
 about:
   home: https://github.com/mosquito/aiormq
