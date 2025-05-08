@@ -1,39 +1,45 @@
 {% set name = "aiormq" %}
 {% set version = "6.8.1" %}
+{% set python_min = "3.8" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: a964ab09634be1da1f9298ce225b310859763d5cf83ef3a7eae1a6dc6bd1da1a
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
     - poetry
   run:
-    - python >=3.8
-    - pamqp ==3.2.1
+    - python >={{ python_min }}
+    - pamqp ==3.3.0
     - yarl
     - setuptools
 
 test:
+  requires:
+    - python {{ python_min }}
+    - pip
   imports:
     - aiormq
+  commands:
+    - pip check
 
 about:
   home: https://github.com/mosquito/aiormq
   license: Apache-2.0
   license_family: Apache
-  license_file: LICENSE.md
+  license_file: COPYING
   summary: aiormq is a pure python AMQP client library
 
   description: |
