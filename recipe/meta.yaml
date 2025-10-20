@@ -1,5 +1,5 @@
 {% set name = "aiormq" %}
-{% set version = "6.8.1" %}
+{% set version = "6.9.1" %}
 {% set python_min = "3.8" %}
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a964ab09634be1da1f9298ce225b310859763d5cf83ef3a7eae1a6dc6bd1da1a
+  sha256: f72cec1120dd20014874fa12edab2993c29507268cd9ab72f8cee2f83dd98a39
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
