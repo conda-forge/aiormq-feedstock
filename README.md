@@ -152,5 +152,6 @@ Feedstock Maintainers
 =====================
 
 * [@gregfreeman](https://github.com/gregfreeman/)
+* [@pb01ka](https://github.com/pb01ka/)
 * [@sphuber](https://github.com/sphuber/)
 
