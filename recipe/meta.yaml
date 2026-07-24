@@ -22,7 +22,7 @@ requirements:
     - uv-build
   run:
     - python >={{ python_min }}
-    - pamqp ==3.3.0
+    - pamqp >=4,<5
     - yarl
 
 test:
