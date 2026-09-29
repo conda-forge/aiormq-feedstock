@@ -21,7 +21,7 @@ requirements:
   host:
     - python ${{ python_min }}.*
     - pip
-    - uv-build
+    - uv-build >=0.12.19,<0.13
   run:
     - python >=${{ python_min }}
     - pamqp >=4,<5
