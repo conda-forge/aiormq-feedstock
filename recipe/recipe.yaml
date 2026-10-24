@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: aiormq
-  version: "7.2.2"
+  version: "7.2.4"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: 1434fba7efc56523684506d3118008aae88ab38383d92da3f9f37d9859256784
+  sha256: 5fd20bb9583d73de85572198496b65cf028f27527c1733c9840d458e0b40e8fa
 
 build:
   number: 0
